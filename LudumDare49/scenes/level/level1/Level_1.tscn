@@ -1,4 +1,4 @@
-[gd_scene load_steps=9 format=2]
+[gd_scene load_steps=10 format=2]
 
 [ext_resource path="res://assets/player.png" type="Texture" id=1]
 [ext_resource path="res://scenes/player/Player.tscn" type="PackedScene" id=2]
@@ -56,6 +56,9 @@ points = PoolVector2Array( 0, 0, 16, 0, 16, 16, 0, 16 )
 } ]
 1/z_index = 0
 
+[sub_resource type="RectangleShape2D" id=4]
+extents = Vector2( 24, 56 )
+
 [node name="Level_1" type="Node2D"]
 script = ExtResource( 7 )
 
@@ -73,3 +76,13 @@ tile_data = PoolIntArray( 0, 0, 0, 1, 0, 0, 2, 0, 0, 3, 0, 0, 4, 0, 0, 5, 0, 0, 
 [node name="Player" parent="." instance=ExtResource( 2 )]
 position = Vector2( 56, 56 )
 collision_mask = 6
+
+[node name="WinningArea" type="Area2D" parent="."]
+collision_layer = 4
+collision_mask = 2
+
+[node name="Shape" type="CollisionShape2D" parent="WinningArea"]
+position = Vector2( -32, 504 )
+shape = SubResource( 4 )
+
+[connection signal="area_entered" from="WinningArea" to="." method="_on_WinningArea_area_entered"]

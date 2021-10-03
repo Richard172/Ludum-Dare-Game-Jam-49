@@ -12,7 +12,6 @@ func _ready():
 	player.position.x = player.initial_x
 	player.position.y = player.initial_y
 
-
 func _character_collided(collision):
 	if collision.collider is TileMap:
 		var tile_position = collision.collider.world_to_map($Player.position)
@@ -27,3 +26,9 @@ func reset_player():
 	player.velocity = Vector2.ZERO
 	player.jump = true
 	player.gravity = player.initial_gravity
+
+func _enter_next_level():
+	get_tree().change_scene("res://scenes/level/level2/level2.tscn")
+
+func _on_WinningArea_area_entered(area):
+	_enter_next_level()

@@ -23,3 +23,9 @@ func reset_player():
 	player.velocity = Vector2.ZERO
 	player.jump = true
 	player.gravity = player.initial_gravity
+
+func _enter_next_level():
+	get_tree().change_scene("res://scenes/level/level2/level2.tscn")
+
+func _on_WinningArea_area_entered(area):
+	_enter_next_level()

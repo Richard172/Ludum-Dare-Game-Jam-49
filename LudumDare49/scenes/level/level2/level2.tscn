@@ -1,10 +1,13 @@
-[gd_scene load_steps=6 format=2]
+[gd_scene load_steps=7 format=2]
 
 [ext_resource path="res://scenes/player/Player.tscn" type="PackedScene" id=1]
 [ext_resource path="res://scenes/tiles/TileMap.tscn" type="PackedScene" id=2]
 [ext_resource path="res://scenes/level/level2/level2.gd" type="Script" id=3]
 [ext_resource path="res://assets/background.png" type="Texture" id=4]
 [ext_resource path="res://scenes/enemy/Spike.tscn" type="PackedScene" id=5]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 24, 24 )
 
 [node name="level2" type="Node2D"]
 script = ExtResource( 3 )
@@ -42,3 +45,13 @@ position = Vector2( 856, 392 )
 tiles = 7
 time = 2
 move_flag_num = 1
+
+[node name="WinningArea" type="Area2D" parent="."]
+collision_layer = 4
+collision_mask = 2
+
+[node name="Shape" type="CollisionShape2D" parent="WinningArea"]
+position = Vector2( -32, 488 )
+shape = SubResource( 1 )
+
+[connection signal="area_entered" from="WinningArea" to="." method="_on_WinningArea_area_entered"]
