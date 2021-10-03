@@ -34,7 +34,18 @@ func _process(delta):
 		position.x = sin(total_time) * x_radius + init_x
 		position.y = cos(total_time) * y_radius + init_y
 		total_time += delta
-		
+	elif move_flag_num == 3:
+		var x_rad = 508
+		var y_rad = 296
+		position.x = init_x + sin(total_time / 15) * x_rad + sin(total_time / 2)
+		position.y = init_y + cos(total_time / 25) * y_rad
+		total_time += delta * 10
+	elif move_flag_num == 4:
+		var x_rad = 508
+		var y_rad = 296
+		position.x = init_x + sin(total_time / 10) * x_rad + sin(total_time / 20)
+		position.y = init_y + cos(total_time / 10) * y_rad
+		total_time += delta * 8
 
 func reset_player(player):
 	player.position.x = player.initial_x

@@ -39,7 +39,7 @@ func move(direction):
 		to = position - moves[direction] * tiles * tile_size
 		to_move_dir = true
 		
-	tween.interpolate_property(self, "position", from, to, time, Tween.TRANS_QUAD, Tween.EASE_IN_OUT)
+	tween.interpolate_property(self, "position", from, to, time, Tween.TRANS_SINE, Tween.EASE_IN_OUT)
 	tween.start()
 
 func _on_Tween_tween_all_completed():
