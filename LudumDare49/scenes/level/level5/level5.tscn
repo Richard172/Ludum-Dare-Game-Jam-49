@@ -471,7 +471,7 @@ time = 103
 move_flag_num = 1
 
 [node name="Spike64" parent="SpikeWall" instance=ExtResource( 5 )]
-position = Vector2( 1016, -40 )
+position = Vector2( 1016, -8 )
 tiles = 35
 move_name = "down"
 time = 103
