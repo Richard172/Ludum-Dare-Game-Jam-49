@@ -1,5 +1,5 @@
 # Ludum-Dare-Game-Jam-49
-My first time joining Ludum Dare game compo, so excited ;)! This is my first time joining Ludum Dare and a game event alone, so I am nervous and scared at the same time.
+My first time joining Ludum Dare game compo, so excited ;)! Though I am nervous and scared at the same time.
 
 [Ludum Dare](https://ldjam.com/events/ludum-dare/49/break-through)
 <br />
