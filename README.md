@@ -15,5 +15,5 @@ Break Through is a hard 2D platformer game made in Godot game engine with black 
 * **Aseprite** for game art
 * **jsfxr** for audio
 <br />
-# Note
+
 Feel free to go to the [Itch.io](https://richard233.itch.io/break-through) page and try the game out!
