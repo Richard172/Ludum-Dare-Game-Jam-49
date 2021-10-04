@@ -7,3 +7,6 @@ My first time joining Ludum Dare game compo, so excited! ;)
 <br />
 <br />
 ![Start Menu](/LudumDare49/title_screen.jpg)
+<br />
+<br />
+# Intro
