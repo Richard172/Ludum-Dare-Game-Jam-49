@@ -6,4 +6,4 @@ My first time joining Ludum Dare game compo, so excited! ;)
 [Itch.io](https://richard233.itch.io/break-through)
 <br />
 <br />
-![Start Menu](Ludum-Dare-Game-Jam-49/LudumDare49/title_screen.jpg)
+![Start Menu](/LudumDare49/title_screen.jpg)
