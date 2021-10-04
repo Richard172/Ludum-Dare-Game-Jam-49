@@ -1,9 +1,9 @@
 # Ludum-Dare-Game-Jam-49
 My first time joining Ludum Dare game compo, so excited ;)! Though I am nervous and scared at the same time.
 
-[Ludum Dare](https://ldjam.com/events/ludum-dare/49/break-through)
+The Ludum Dare page: [Ludum Dare](https://ldjam.com/events/ludum-dare/49/break-through)
 <br />
-[Itch.io](https://richard233.itch.io/break-through)
+Itch.io page: [Itch.io](https://richard233.itch.io/break-through)
 <br />
 ![Start Menu](/LudumDare49/title_screen.jpg)
 <br />
